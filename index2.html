@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+	<div id="dataviz-container"></div>
+	<script src="d3.v3.min.js"></script>
+	<script>
+		// set sample data
+		data = [];
+		for(var i=0; i<100000;  i++){
+			data.push(1);
+		}
+
+		// generate the dataviz
+		var svg = d3.select('#dataviz-container')
+			.append('svg:svg')
+				.attr('width', 500)
+				.attr('height', 500);
+
+		svg.selectAll('.circle')
+			.data( data )
+			.enter()
+				.append('circle')
+				.attr('r', 1)
+				.attr('fill', '#26963c')
+				.attr('cx', function(){ return Math.floor(Math.random() * 1000); })
+    			.attr('cy', function(){ return Math.floor(Math.random() * 1000); });
+	</script>
+</body>
+</html>
