@@ -38,8 +38,8 @@ jsdom.env({
 				.append('circle')
 				.attr('r', 1)
 				.attr('fill', '#26963c')
-				.attr('cx', function(){ return Math.floor(Math.random() * 1000); })
-    			.attr('cy', function(){ return Math.floor(Math.random() * 1000); });
+				.attr('cx', function(){ return Math.floor(Math.random() * 500); })
+    			.attr('cy', function(){ return Math.floor(Math.random() * 500); });
 
 		// d3.select(el)
 		// 	.append('svg:svg')
