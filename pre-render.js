@@ -71,3 +71,6 @@ jsdom.env({
 	} // end jsDom done callback
 })
 // no semi-column was harmed during this development
+
+//execute by node.js
+//>node --max-old-space-size=5120 pre-render.js
